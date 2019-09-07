@@ -15,7 +15,7 @@ artfile = open("hangart.txt", "r")
 art = artfile.read()
 artfile.close()
 art = art.split(",")
-#gamewords = ["engineer", "coffee", "haloween", "water", "sandwich", "headphones", "airplane", "scooter", "llama", "summer", "vacation", "dragonfly"]
+
 while True:
     print("""
     Welcome to Hangman!
@@ -25,7 +25,6 @@ while True:
     Have fun!
     """)
     source = gamewords[random.randint(0, len(gamewords)-1)]
-#    source = gamewords[1]
     letters = ["*" for i in source]
     attempts = 0
     wrong = []
