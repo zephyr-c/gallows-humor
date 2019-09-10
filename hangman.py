@@ -31,7 +31,7 @@ while True:
     while attempts<10:
         word = makeword(letters)
         print("The word is:", word)
-        gus = str(input("Guess a letter: "))
+        gus = input("Guess a letter: ")
         if gus == "quit":
             break
         if gus in wrong or gus in word:
@@ -46,7 +46,6 @@ while True:
             print(art[attempts])
             attempts += 1
             wrong.append(gus)
-#            print("Nope")
             print("Mistakes: ", wrong)
 
         if makeword(letters) == source or gus == source:
