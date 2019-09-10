@@ -20,7 +20,7 @@ while True:
     print("""
     Welcome to Hangman!
     Enter 'quit' at any time to quit the current round
-    You get 10 attempts to guess the word
+    You get 10 mistakes before the man hangs
     If you think you know the whole word you can enter it at any time
     Have fun!
     """)
